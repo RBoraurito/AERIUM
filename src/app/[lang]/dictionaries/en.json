@@ -18,5 +18,32 @@
       "text": "Contact",
       "url": "#contact"
     }
+  },
+  "hero": {
+    "title": [
+      "Welcome to",
+      "AERIUM,",
+      "Airworthiness & Security"
+    ],
+    "description": "AERIUM is a team of professionals dedicated to offering aircraft maintenance management services in terms of planning, execution and control of said activity. We are committed to developing the human capital skills of our collaborators and users.",
+    "primaryCTA": {
+      "text": "Work together",
+      "url": "#contact"
+    },
+    "trustTitle": "Empresas que confian en nosotros",
+    "companies": [
+      {
+        "src": "/companies/aviacon.png",
+        "alt": "Logo de Aviacon"
+      },
+      {
+        "src": "/companies/helidosa.png",
+        "alt": "Logo de Helidosa"
+      },
+      {
+        "src": "/companies/jet-point.png",
+        "alt": "Logo de Jet Point"
+      }
+    ]
   }
 }

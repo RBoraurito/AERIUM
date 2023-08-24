@@ -18,5 +18,32 @@
       "text": "Contacto",
       "url": "#contact"
     }
+  },
+  "hero": {
+    "title": [
+      "Bienvenide a",
+      "AERIUM,",
+      "aeronavegavilidad y seguridad operacional"
+    ],
+    "description": "AERIUM es un equipo de profesionales dedicados a ofrecer servicios de gestión del mantenimiento de aeronaves en términos de planificación, ejecución y control de dicha actividad. Tenemos un compromiso con el desarrollo de las competencias del capital humano de nuestros colaboradores y usuarios.",
+    "primaryCTA": {
+      "text": "Trabajar juntos",
+      "url": "#contact"
+    },
+    "trustTitle": "Empresas que confian en nosotros",
+    "companies": [
+      {
+        "src": "/companies/aviacon.png",
+        "alt": "Logo de Aviacon"
+      },
+      {
+        "src": "/companies/helidosa.png",
+        "alt": "Logo de Helidosa"
+      },
+      {
+        "src": "/companies/jet-point.png",
+        "alt": "Logo de Jet Point"
+      }
+    ]
   }
 }
