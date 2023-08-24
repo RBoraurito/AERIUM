@@ -1,0 +1,22 @@
+{
+  "header": {
+    "links": [
+      {
+        "text": "Servicios",
+        "url": "#services"
+      },
+      {
+        "text": "Sobre Nosotros",
+        "url": "#about"
+      },
+      {
+        "text": "Equipo",
+        "url": "#team"
+      }
+    ],
+    "hightlight": {
+      "text": "Contacto",
+      "url": "#contact"
+    }
+  }
+}

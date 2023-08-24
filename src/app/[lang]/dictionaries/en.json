@@ -1,0 +1,22 @@
+{
+  "header": {
+    "links": [
+      {
+        "text": "Services",
+        "url": "#services"
+      },
+      {
+        "text": "About",
+        "url": "#about"
+      },
+      {
+        "text": "Team",
+        "url": "#team"
+      }
+    ],
+    "hightlight": {
+      "text": "Contact",
+      "url": "#contact"
+    }
+  }
+}

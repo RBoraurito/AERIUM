@@ -7,8 +7,9 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
+import { getDictionary } from './dictionaries'
 
-export function generateMetadata({params}) {
+export function generateMetadata({params}: {params: any}) {
   const { lang } = params;
   const title = lang === 'en' ?
     'Aerium | a team of professionals dedicated to airworthiness & safety' :
@@ -22,10 +23,11 @@ export function generateMetadata({params}) {
   }
 }
 
-export default function Home() {
+export default async function Home({params}: {params: any}) {
+  const dict = await getDictionary(params.lang)
   return (
     <>
-      <Header />
+      <Header {...dict.header} />
       <main>
         <Hero />
         <PrimaryFeatures />
