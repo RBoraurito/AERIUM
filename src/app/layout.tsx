@@ -2,16 +2,6 @@ import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
-import { type Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
-  },
-  description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
-}
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,14 +15,20 @@ const lexend = Lexend({
   variable: '--font-lexend',
 })
 
+export async function generateStaticParams() {
+  return [{ lang: 'en-US' }, { lang: 'de' }]
+}
+
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: any
 }) {
   return (
     <html
-      lang="en"
+      lang={params.lang}
       className={clsx(
         'h-full scroll-smooth bg-white antialiased',
         inter.variable,
