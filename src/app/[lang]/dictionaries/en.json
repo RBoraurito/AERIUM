@@ -45,5 +45,70 @@
         "alt": "Logo de Jet Point"
       }
     ]
+  },
+  "services": {
+    "title": "Services",
+    "description":"AERIUM is a team of professionals dedicated to offering aircraft maintenance management services in terms of planning, execution and control of said activity.",
+    "items": [
+      {
+        "title": "Aircraft Pre-buy Inspection",
+        "description": "Evaluation for an aircraft, its components, and records in order in order to assess compliance with the desired Airworthiness status for its acquisition and the operation proposed by the client.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Aircraft Certification",
+        "description": "Management of the registration of the aircraft in the desired State of Registry, which starts from obtaining its type certification until the issuance of the certificates that legally support its operation in a specific country.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Aircraft Maintenance Programs",
+        "description": "Creation of Maintenance Programs based on the specific configuration of your aircraft in compliance with the regulatory requirements that apply to your operation.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Maintenance Records Audit",
+        "description": "Evaluation of compliance with the regulatory requirements of the registration of your aircraft, delivering a plan of corrective actions aimed at improving it.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Preparation for Accreditation Audits",
+        "description": "Preparation of organizations for compliance with international certification standards, as well as evaluations by local and foreign civil aviation authorities.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Maintenance Vendor Evaluation",
+        "description": "Audits to suppliers of maintenance, parts and materials according to safety and industry best practices as criteria.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      }
+    ]
+  },
+  "about": {
+    "ourMission": {
+      "title": "Our Mission",
+      "description": "To provide aircraft maintenance management and control services with quality and efficiency in compliance with the applicable certification standards, as well as provide training activities aimed at developing skills for the national and international aeronautical industry, thus contributing to the quality, efficiency and safety of the maintenance operations of our clients."
+    },
+    "ourVision": {
+      "title": "Our Vision",
+      "description": "To become a standard for reference as a solution provider in the management of legal and technical processes of control and management for aircraft maintenance in Latin America."
+    },
+    "ourPrinciples": {
+      "title": "Our Principles",
+      "items": [
+        "Adherence to compliance with the regulations governing international civil aviation.",
+        "Support for organizational excellence.",
+        "The use of technology as a means of management and as a way of developing learning.",
+        "Reducing the cost of process management."
+      ]
+    },
+    "ourValues": {
+      "title": "Our Values",
+      "items": [
+        "Integrity",
+        "Responsibility",
+        "Clearness",
+        "Quality",
+        "Innovation"
+      ]
+    }
   }
 }

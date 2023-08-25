@@ -100,6 +100,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@heroicons/react@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@heroicons/react@npm:2.0.18"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 597e8668818623d568a302e343ef06b69f62ce297c14b88c2ebbfed0c0f00cd85ec44fae33ec8a249931b4e7dcf145743ae3198095a9f4682108de5155f5f4c3
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.10":
   version: 0.11.10
   resolution: "@humanwhocodes/config-array@npm:0.11.10"
@@ -498,6 +507,7 @@ __metadata:
     "@formatjs/intl-localematcher": ^0.4.0
     "@headlessui/react": ^1.7.17
     "@headlessui/tailwindcss": ^0.2.0
+    "@heroicons/react": ^2.0.18
     "@tailwindcss/forms": ^0.5.3
     "@types/negotiator": ^0.6.1
     "@types/node": 20.4.6

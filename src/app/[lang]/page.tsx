@@ -4,8 +4,8 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { About } from '@/components/About'
+import { Services } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 import { getDictionary } from './dictionaries'
 
@@ -30,8 +30,8 @@ export default async function Home({params}: {params: any}) {
       <Header {...dict.header} />
       <main>
         <Hero {...dict.hero} />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
+        <About {...dict.about} />
+        <Services {...dict.services}/>
         <CallToAction />
         <Testimonials />
         <Pricing />

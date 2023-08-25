@@ -45,5 +45,71 @@
         "alt": "Logo de Jet Point"
       }
     ]
+  },
+
+  "services": {
+    "title": "Servicios",
+    "description":"AERIUM es un equipo de profesionales dedicados a ofrecer servicios de gestión del mantenimiento de aeronaves en términos de planificación, ejecución y control de dicha actividad.",
+    "items": [
+      {
+        "title": "Inspección para Compra de Aeronaves",
+        "description": "Auditoria de la aeronave, sus componentes y sus registros con el fin de valorar el cumplimiento del estado de Aeronavegabilidad deseado para su adquisición y la operación propuesta por el cliente.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Certificación de Aeronaves",
+        "description": "Gestión del registro de la aeronave en el Estado de Matricula deseado el cual inicia desde la obtención de su certificación tipo hasta la emision de los certificados que legalmente sustentan su operación en un país determinado.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Programas de Mantenimiento de Aeronaves",
+        "description": "Creación de Programas de Mantenimiento en base a la configuración especifica de su aeronave en cumplimiento de los requisitos regulatorios que le apliquen según su operación.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Auditorias a Registros de Mantenimiento",
+        "description": "Evaluación del cumplimiento de los requisitos regulatorios del registro de su aeronave entregando un plan de acciones correctivas destinadas a la mejora del mismo.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Preparación para Auditorias de Certificación",
+        "description": "Preparación de organizaciones para cumplimiento de estándares de certificación internacional, así como las evaluaciones por autoridades de aviación civil locales y extranjeras.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      },
+      {
+        "title": "Evaluación a Proveedores de Mantenimiento",
+        "description": "Auditorias a proveedores de mantenimiento, partes y materiales acorde a criterios de seguridad operacional y buenas prácticas de la industria.",
+        "image": "https://images.pexels.com/photos/2245279/pexels-photo-2245279.jpeg"
+      }
+    ]
+  },
+  "about": {
+    "ourMission": {
+      "title": "Nuestra Misión",
+      "description": "Proveer servicios de administración y control del mantenimiento de aeronaves con calidad y eficiencia en cumplimiento de los estándares aplicables de certificación, así como proveer actividades de formación orientadas al desarrollo de competencias para el sector aeronáutico nacional e internacional contribuyendo así a la calidad, eficiencia y seguridad operacional en las labores de mantenimiento de nuestros clientes."
+    },
+    "ourVision": {
+      "title": "Nuestra Visión",
+      "description": "Ser un marco de referencia como proveedor de soluciones en la gestión de procesos legales y técnicos, de control y de gestión del mantenimiento de aeronaves en Latinoamérica."
+    },
+    "ourPrinciples": {
+      "title": "Nuestros Principios",
+      "items": [
+        "Apego al cumplimiento de las normativas que rigen la aviación civil internacional.",
+        "El apoyo a la excelencia organizacional.",
+        "El uso de la tecnología como medio de gestión y como forma de desarrollo del aprendizaje.",
+        "La reducción del costo de gestión de los procesos."
+      ]
+    },
+    "ourValues": {
+      "title": "Nuestros Valores",
+      "items": [
+        "Integridad",
+        "Responsabilidad",
+        "Claridad",
+        "Calidad",
+        "Innovación"
+      ]
+    }
   }
 }
