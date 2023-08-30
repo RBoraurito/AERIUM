@@ -46,6 +46,51 @@
       }
     ]
   },
+  "mainServices": {
+    "title": "Main services",
+    "description": "AERIUM is a team of professionals dedicated to offering aircraft maintenance management services in terms of planning, execution and control of said activity.",
+    "services": [
+      {
+        "title": "Administracions de aeronaves",
+        "description": "Lorem ipsum dolor eterem",
+        "href": "#contact",
+        "items": [
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración",
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración"
+        ]
+      },
+      {
+        "title": "Administracions de aeronaves",
+        "description": "Lorem ipsum dolor eterem",
+        "href": "#contact",
+        "items": [
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración",
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración"
+        ]
+      },
+      {
+        "title": "Administracions de aeronaves",
+        "description": "Lorem ipsum dolor eterem",
+        "href": "#contact",
+        "items": [
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración",
+          "Gestión de la aeronavegabilidad",
+          "Gestión de la documentación técnica",
+          "Gestión de la configuración"
+        ]
+      }
+    ]
+  },
   "services": {
     "title": "Services",
     "description":"AERIUM is a team of professionals dedicated to offering aircraft maintenance management services in terms of planning, execution and control of said activity.",
