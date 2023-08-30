@@ -1,4 +1,10 @@
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+'use client'
+import { FormEvent, SyntheticEvent, useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
+
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.min.css';
 
 interface ContactProps {
   title: string
@@ -12,9 +18,32 @@ interface ContactProps {
     button: string
   }
   services: string[]
+  success: string
+  error: string
 }
 
-export function Contact({title, description, fields, services}: ContactProps) {
+export function Contact({title, description, fields, services, success, error}: ContactProps) {
+  const form = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  function sendEmail(e: SyntheticEvent<FormEvent<Element>, Event>) {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+      form.current as HTMLFormElement,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    )
+      .then((result) => {
+          toast.success(success);
+          form.current?.reset();
+      }, (error) => {
+          toast.error(error);
+      }).finally(() => {
+        setIsLoading(false);
+      });
+  }
   return (
     <div className="relative isolate bg-white" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -85,7 +114,7 @@ export function Contact({title, description, fields, services}: ContactProps) {
             </dl> */}
           </div>
         </div>
-        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        <form ref={form} onSubmit={sendEmail} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -169,6 +198,7 @@ export function Contact({title, description, fields, services}: ContactProps) {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
+                disabled={isLoading}
                 className="rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 {fields.button}
@@ -177,6 +207,7 @@ export function Contact({title, description, fields, services}: ContactProps) {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </div>
   )
 }

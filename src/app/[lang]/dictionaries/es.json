@@ -166,6 +166,8 @@
       "wantedService": "Servicio deseado",
       "message": "Mensaje (información adicional)",
       "button": "Enviar mensaje"
-    }
+    },
+    "success": "Mensaje enviado exitosamente",
+    "error": "Ocurrió un error al enviar el mensaje"
   }
 }
