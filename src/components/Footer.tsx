@@ -1,20 +1,33 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
-export function Footer() {
+import Logo from '@/images/aerium-icon.png'
+import { ILink } from '@/types/common'
+
+interface FooterProps {
+  links: ILink[],
+}
+
+export function Footer({links}: FooterProps) {
   return (
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+          <div className="flex justify-center gap-6">
+            <Image src={Logo} alt="Logo de Aerium" className="h-10 w-auto" />
+            <h4 className="font-display text-3xl font-bold uppercase tracking-tight text-slate-700">
+              Aerium
+            </h4>
+          </div>
+
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              {links.map((link) => (
+                <NavLink href={link.url}>{link.text}</NavLink>
+              ))}
             </div>
           </nav>
         </div>
@@ -46,7 +59,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} Aerium. All rights
             reserved.
           </p>
         </div>

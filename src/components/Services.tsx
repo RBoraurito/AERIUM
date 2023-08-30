@@ -134,7 +134,6 @@ function ServicesDesktop({ services }: { services: ServiceItem[]}) {
 export function Services({title, description, items}: ServicesProps) {
   return (
     <section
-      id="services"
       aria-label=""
       className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
     >

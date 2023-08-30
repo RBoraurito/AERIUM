@@ -37,7 +37,7 @@ export default async function Home({params}: {params: any}) {
         {/* <Testimonials /> */}
         {/* <Faqs /> */}
       </main>
-      <Footer />
+      <Footer links={dict.header.links} />
     </>
   )
 }

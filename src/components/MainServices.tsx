@@ -120,8 +120,8 @@ interface MainServicesProps {
 export function MainServices({title, description, services}: MainServicesProps) {
   return (
     <section
-      id="pricing"
-      aria-label="Pricing"
+      id="services"
+      aria-label="services"
       className="bg-slate-900 py-20 sm:py-32"
     >
       <Container>
