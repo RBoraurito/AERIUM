@@ -33,9 +33,9 @@ export default async function Home({params}: {params: any}) {
         <MainServices {...dict.mainServices} />
         <Services {...dict.services}/>
         <About {...dict.about} />
-        <CallToAction />
-        <Testimonials />
-        <Faqs />
+        {/* <CallToAction /> */}
+        {/* <Testimonials /> */}
+        {/* <Faqs /> */}
       </main>
       <Footer />
     </>
