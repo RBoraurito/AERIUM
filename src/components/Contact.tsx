@@ -1,5 +1,5 @@
 'use client'
-import { FormEvent, SyntheticEvent, useRef, useState } from 'react'
+import { FormEvent, FormEventHandler, SyntheticEvent, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -26,7 +26,7 @@ export function Contact({title, description, fields, services, success, error}: 
   const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  function sendEmail(e: SyntheticEvent<FormEvent<Element>, Event>) {
+  const sendEmail: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     setIsLoading(true);
     emailjs.sendForm(
