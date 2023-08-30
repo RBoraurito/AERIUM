@@ -155,5 +155,17 @@
         "Innovación"
       ]
     }
+  },
+  "contact": {
+    "title": "Empezar a trabajar juntos",
+    "description": "Nos esforzamos por tener una comunicacion impecable. Si tienes alguna pregunta, no dudes en contactarnos.",
+    "fields": {
+      "firstName": "Nombres",
+      "lastName": "Apellidos",
+      "email": "Correo Electrónico",
+      "wantedService": "Servicio deseado",
+      "message": "Mensaje (información adicional)",
+      "button": "Enviar mensaje"
+    }
   }
 }

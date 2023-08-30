@@ -7,6 +7,7 @@ import { MainServices } from '@/components/MainServices'
 import { About } from '@/components/About'
 import { Services } from '@/components/Services'
 import { Testimonials } from '@/components/Testimonials'
+import { Contact } from '@/components/Contact'
 import { getDictionary } from './dictionaries'
 
 export function generateMetadata({params}: {params: any}) {
@@ -25,6 +26,7 @@ export function generateMetadata({params}: {params: any}) {
 
 export default async function Home({params}: {params: any}) {
   const dict = await getDictionary(params.lang)
+  const services = [...dict.mainServices.services.map(items => items.title), ...dict.services.items.map(items => items.title)]
   return (
     <>
       <Header {...dict.header} />
@@ -36,6 +38,7 @@ export default async function Home({params}: {params: any}) {
         {/* <CallToAction /> */}
         {/* <Testimonials /> */}
         {/* <Faqs /> */}
+        <Contact {...dict.contact} services={services} />
       </main>
       <Footer links={dict.header.links} />
     </>

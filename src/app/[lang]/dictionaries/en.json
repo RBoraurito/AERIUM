@@ -155,5 +155,17 @@
         "Innovation"
       ]
     }
+  },
+  "contact": {
+    "title": "Start working together",
+    "description": "We aim for smooth communication and a great relationship with our clients. We are always available to answer any questions you may have.",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "wantedService": "Wanted Service",
+      "message": "Message (additional information)",
+      "button": "Send message"
+    }
   }
 }
